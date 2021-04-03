@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/oAli\ \(1\).png');
+  min-height: 100%;
+  
+}
+.fa-fw{
+  width: 4.285714em;
+  -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.fa-fw:hover{
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: red;
+}
+.eeee{
+  -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.eeee:hover{
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: red;
+}
+
+
+
+</style>
+<body onload="myfunct()">
+  <!-- preloader -->
+  <div id="building">
+    <div id="blocks">
+      <div class="b" id="b1"></div>
+      <div class="b" id="b2"></div>
+      <div class="b" id="b3"></div>
+      <div class="b" id="b4"></div>
+    </div>
+    
+  </div>
+  
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#services" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Services</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Ali Imran Adil</b></h1>
+    <p style="font-size: x-large;">Teacher and Web Developer.</p>
+    <img src="/oAli (1).png" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="./oAli (1).png" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top" id="popup">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="services">
+    <h2 class="w3-text-white">My Services</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-full">
+        <img src="/DDDD.png" style="width:100%">
+        
+      </div>
+
+     
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2 class="w3-text-white">About</h2>
+    <hr class="w3-opacity">
+    <p style="font-size: x-large;">Hi! My name is Ali Imran Adil and I am a Full Stack Web Developer and A Teacher and An Ardent learner. I'm passionate about learning new things and dedicated to my work With just 6 months coding experience as an aspiring Full Stack Web Developer. I have been acquiring the skills and gaining knowledge to make any project a success.
+    </p>
+    <h3 class="w3-padding-16 w3-text-white">My Skills :)</h3>
+    <p class="w3-wide" style="font-size: larger;">System Administration (Linux and Windows)</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide" style="font-size: larger;">Web Development</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide" style="font-size: larger;">Gimp (An alternative to Photoshop)</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+    </div>
+      <p class="w3-wide" style="font-size: larger;">Inkscape (An alternative to CorelDRAW)</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" id="poopup">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-white">My Certifications :)</h3>
+    <img src="/Screenshot from 2021-03-31 11-11-11.png" alt="Avatar" style="width:100%">
+    
+   
+    <img src="/Screenshot from 2021-03-31 11-11-37.png" alt="Avatar" class="w3-margin-top" style="width:100%">
+    
+    
+    <img src="/Screenshot from 2021-03-31 11-12-07.png" alt="Avatar" class="w3-margin-top" style="width:100%">
+    
+    
+    
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2 class="w3-text-white">Contact Me :)</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <a href="https://goo.gl/maps/uNfYz5UZ2aLWisy66" target="_blank"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i></a> <p style="font-size: larger;">E - West Corridor, near Aamir Garage, Raniganj, Bihar 854334</p>
+      <a href="https://api.whatsapp.com/send?phone=918651688561" target="_blank"><i class="fa fa-whatsapp fa-fw w3-xxlarge w3-margin-right"></i></a><p style="font-size: larger;"> whatsapp On: 8651688561</p>
+      <a href="mailto:aliimranadil2@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i></a><p style="font-size: larger;"> Email: aliimranadil2@gmail.com</p>
+    </div>
+    
+    <!-- Image of location/map -->
+    <hr style="border: 1px solid #eee;">
+    <a href="https://goo.gl/maps/uNfYz5UZ2aLWisy66" target="_blank"><img src="/Screenshot from 2021-04-02 20-22-53.png" class="w3-image w3-greyscale" style="width:100%;margin:32px 0"></a>
+    <hr style="border: 1px solid #eee;">
+    <p class="w3-text-white" style="font-size: x-large;">Let's have some chit-chat. Send me a message :)</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large eeee" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a href="https://www.facebook.com/aliimran.adilcute/" target="_blank"><i class="fa fa-facebook-official eeee"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <a href="https://twitter.com/000ADIL" target="_blank"><i class="fa fa-twitter eeee"></i></a>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+
+}
+
+
+
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
